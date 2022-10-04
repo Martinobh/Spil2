@@ -1,0 +1,24 @@
+c:\users\martin\documents\visual studio 2013\Projects\Spil2\Spil2\bin\Debug\Spil2.exe.config
+c:\users\martin\documents\visual studio 2013\Projects\Spil2\Spil2\bin\Debug\Spil2.exe
+c:\users\martin\documents\visual studio 2013\Projects\Spil2\Spil2\bin\Debug\Spil2.pdb
+c:\users\martin\documents\visual studio 2013\Projects\Spil2\Spil2\obj\Debug\Spil2.csprojResolveAssemblyReference.cache
+c:\users\martin\documents\visual studio 2013\Projects\Spil2\Spil2\obj\Debug\Spil2.Form1.resources
+c:\users\martin\documents\visual studio 2013\Projects\Spil2\Spil2\obj\Debug\Spil2.Properties.Resources.resources
+c:\users\martin\documents\visual studio 2013\Projects\Spil2\Spil2\obj\Debug\Spil2.csproj.GenerateResource.Cache
+c:\users\martin\documents\visual studio 2013\Projects\Spil2\Spil2\obj\Debug\Spil2.exe
+c:\users\martin\documents\visual studio 2013\Projects\Spil2\Spil2\obj\Debug\Spil2.pdb
+C:\Users\Martin\documents\visual studio 2013\Projects\Spil2\Spil2\obj\Debug\Spil2.Form2.resources
+C:\Users\Martin\documents\visual studio 2013\Projects\Spil2\Spil2\obj\Debug\Spil2.Map0.resources
+C:\Users\mbail\source\repos\Spil2\Spil2\bin\Debug\Spil2.exe.config
+C:\Users\mbail\source\repos\Spil2\Spil2\bin\Debug\Spil2.exe
+C:\Users\mbail\source\repos\Spil2\Spil2\bin\Debug\Spil2.pdb
+C:\Users\mbail\source\repos\Spil2\Spil2\obj\Debug\Spil2.csproj.AssemblyReference.cache
+C:\Users\mbail\source\repos\Spil2\Spil2\obj\Debug\Spil2.Form1.resources
+C:\Users\mbail\source\repos\Spil2\Spil2\obj\Debug\Spil2.Form2.resources
+C:\Users\mbail\source\repos\Spil2\Spil2\obj\Debug\Spil2.Map0.resources
+C:\Users\mbail\source\repos\Spil2\Spil2\obj\Debug\Spil2.Properties.Resources.resources
+C:\Users\mbail\source\repos\Spil2\Spil2\obj\Debug\Spil2.csproj.GenerateResource.cache
+C:\Users\mbail\source\repos\Spil2\Spil2\obj\Debug\Spil2.csproj.CoreCompileInputs.cache
+C:\Users\mbail\source\repos\Spil2\Spil2\obj\Debug\Spil2.exe
+C:\Users\mbail\source\repos\Spil2\Spil2\obj\Debug\Spil2.pdb
+C:\Users\mbail\source\repos\Spil2\Spil2\obj\Debug\Spil2.MiddelearthForm.resources

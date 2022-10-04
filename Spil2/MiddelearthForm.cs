@@ -266,9 +266,22 @@ namespace Spil2
             _ticks++;
             label5.Text = _ticks.ToString();
 
-            nest n = new nest();
-            n.race = "Orc";
+            GlobalVars GL = new GlobalVars();
 
+            int rn = GlobalVars.GetRandomNumber(1, 50);
+
+            if (rn < 20)
+            {
+                nest n = new nest();
+                n.race = "Orc";
+                n.number++;
+            }
+            else if(rn >20 && rn< 30)
+            {
+                nest n = new nest();
+                n.race = "Ogre";
+                n.number++;
+            }
 
         }
     }
@@ -276,7 +289,7 @@ namespace Spil2
     public class nest
     {
         public string race;
-        public string number;
+        public int number;
 
         //private void t()
         //{

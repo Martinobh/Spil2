@@ -5,14 +5,47 @@ using System.Text;
 using System.Timers;
 using System.Windows.Forms;
 
+
+/*
+ Racenr:
+1 = Orc
+2 = Kobold
+3 = Hobgoblin
+4 = Lizardman
+5 = Bugbear  
+6 = Wolf
+7 = Lion  
+8 = Bear
+9 = Eagel
+10 = Horse
+11 = Puma
+12 = Giant Spider
+13 = Giant Scorpion 
+14 = Gorilla
+15 = Bull
+16 = Ogre
+17 = 
+18 =
+19 =
+20 =
+21 =
+22 =
+23 =
+24 =
+25 =
+ */
+
+
+
 namespace Spil2
 {
 
 
 
-class Monster
+public class Monster
     {
         public int Id;
+        int racenr;
         string Name;
         public int Hp;
         int Ac;
@@ -102,7 +135,31 @@ class Monster
         public int GetLifeXp()
         { return LifeXp; }
 
+        public void SetRacenr(int n)
+        { racenr = n; }
+        public int GetRacenr()
+        { return racenr; }
+
     }
+
+    public class Orc : Monster 
+    { 
+    }
+    public class Kobold : Monster
+    {
+    }
+    public class Bugbear : Monster
+    {
+    }
+    public class Ogre : Monster
+    {
+    }
+    public class HillGiant : Monster
+    {
+    }
+
+
+
     public class MonsterPOPGrowth{
 
         public void initiateMonsterPOPGrowth() 

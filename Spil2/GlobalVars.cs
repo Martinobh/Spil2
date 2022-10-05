@@ -67,7 +67,7 @@ namespace Spil2
             }
         }
 
-      
+        public List<nest> Nestlist = new List<nest>();
 
     }
 }

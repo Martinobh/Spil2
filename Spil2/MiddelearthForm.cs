@@ -246,7 +246,7 @@ namespace Spil2
                     label3.Text = "G-x=" + Globalpx.ToString();
                     label4.Text = "G-y=" + Globalpy.ToString();
 
-                //      rndmobcheck();
+                      rndmobcheck();
                 Random rndm = new Random();
 
                // monsterNest m = new monsterNest();
@@ -261,12 +261,14 @@ namespace Spil2
             
         }
 
+        public GlobalVars GL = new GlobalVars();
+
         public void timer1_Tick(object sender, EventArgs e)
         {
             _ticks++;
             label5.Text = _ticks.ToString();
 
-            GlobalVars GL = new GlobalVars();
+            
 
             int rn = GlobalVars.GetRandomNumber(1, 50);
 
@@ -274,13 +276,40 @@ namespace Spil2
             {
                 nest n = new nest();
                 n.race = "Orc";
-                n.number++;
+                n.racenr = 1;
+                n.number = GlobalVars.GetRandomNumber(1, 20);
+                n.xCord = GlobalVars.GetRandomNumber(1, 1272);
+                n.yCord = GlobalVars.GetRandomNumber(1, 1015);
+                GL.Nestlist.Add(n);
+
             }
             else if(rn >20 && rn< 30)
             {
                 nest n = new nest();
                 n.race = "Ogre";
-                n.number++;
+                n.racenr = 16;
+                n.number= GlobalVars.GetRandomNumber(1, 10);
+                n.xCord = GlobalVars.GetRandomNumber(1, 1272);
+                n.yCord = GlobalVars.GetRandomNumber(1, 1015);
+                GL.Nestlist.Add(n);
+            }
+
+
+
+            int iterationNr = 1;
+            foreach (nest n in GL.Nestlist)
+            {
+                int rn2 = GlobalVars.GetRandomNumber(1, 100);
+
+                if (rn2 < 10)
+                {
+                    //nest n = new nest();
+                    n.number++;
+                    //   GL.Nestlist.Add(n);
+                 //   textBox1.Text = textBox1.Text + "," + iterationNr.ToString()+ "," + rn2.ToString() + "," + n.race + "," + n.number + Environment.NewLine + "------------" + Environment.NewLine;
+                }
+                string a = "";
+                iterationNr++;
             }
 
         }
@@ -289,7 +318,11 @@ namespace Spil2
     public class nest
     {
         public string race;
+        public int racenr;
         public int number;
+        public int xCord;
+        public int yCord;
+
 
         //private void t()
         //{

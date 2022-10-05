@@ -189,20 +189,36 @@ namespace Spil2
             System.Threading.Thread.Sleep((int)System.TimeSpan.FromSeconds(.0005).TotalMilliseconds);
             Random rnd = new Random(Seed);
 
+            //Orc o = new Orc();
+            
+
             int rr = rnd.Next(1, 81);
         //    MessageBox.Show(rr.ToString());
             if (rr > 0 && rr < 81)
             {
-                rndmob.SetName("Orc" + nr);
-                rndmob.SetId(nr);
-                rndmob.iniHp(GetRandomNumber(2, 9));
-                rndmob.SetAc(GetRandomNumber(6, 9));
-                rndmob.SetAtt(GetRandomNumber(4, 9));
-                rndmob.SetDmg(GetRandomNumber(1, 4));
-                rndmob.SetIni(GetRandomNumber(1, 4));
-                rndmob.SetAlive(true);
-                rndmob.SetXp(15);
-                return rndmob;
+                //rndmob.SetName("Orc" + nr);
+                //rndmob.SetId(nr);
+                //rndmob.iniHp(GetRandomNumber(2, 9));
+                //rndmob.SetAc(GetRandomNumber(6, 9));
+                //rndmob.SetAtt(GetRandomNumber(4, 9));
+                //rndmob.SetDmg(GetRandomNumber(1, 4));
+                //rndmob.SetIni(GetRandomNumber(1, 4));
+                //rndmob.SetAlive(true);
+                //rndmob.SetXp(15);
+                //return rndmob;
+                Orc o = new Orc();
+                o.SetName("Orc" + nr);
+                o.SetId(nr);
+                o.SetRacenr(1);
+                o.iniHp(GetRandomNumber(2, 9));
+                o.SetAc(GetRandomNumber(6, 9));
+                o.SetAtt(GetRandomNumber(4, 9));
+                o.SetDmg(GetRandomNumber(1, 4));
+                o.SetIni(GetRandomNumber(1, 4));
+                o.SetAlive(true);
+                o.SetXp(15);
+                return o;
+
             }
             else if (rr > 80 && rr < 93)
             {

@@ -184,6 +184,8 @@ namespace Spil2
         private Monster rndmob(int nr)
         {
          
+            //Denne her skal ikke create stamdata til mobs her, den skal hente mobs fra  
+
             Monster rndmob = new Monster();
             int Seed = (int)DateTime.Now.Ticks;
             System.Threading.Thread.Sleep((int)System.TimeSpan.FromSeconds(.0005).TotalMilliseconds);

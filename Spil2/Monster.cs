@@ -143,7 +143,7 @@ public class Monster
     }
 
     public class Orc : Monster 
-    { 
+    {
     }
     public class Kobold : Monster
     {
@@ -158,6 +158,13 @@ public class Monster
     {
     }
 
+    public class Wolf : Monster
+    {
+    }
+
+    public class Lizardman : Monster
+    {
+    }
 
 
     public class MonsterPOPGrowth{
@@ -168,33 +175,7 @@ public class Monster
 
         }
 
-  //      public static System.Windows.Forms.Timer myTimer = new System.Windows.Forms.Timer();
-  //      public static int alarmCounter = 1;
-  //      public static bool exitFlag = false;
-
-  //      // This is the method to run when the timer is raised.
-  //      public static void TimerEventProcessor(Object myObject,
-  //                                              EventArgs myEventArgs)
-  //      {
-  ////          myTimer.Stop();
-
-  //          // Displays a message box asking whether to continue running the timer.
-  //          if (MessageBox.Show("Continue running?", "Count is: " + alarmCounter,
-  //             MessageBoxButtons.YesNo) == DialogResult.Yes)
-  //          {
-  //              // Restarts the timer and increments the counter.
-  //              alarmCounter += 1;
-  //              myTimer.Enabled = true;
-  //          }
-  //          else
-  //          {
-  //              // Stops the timer.
-  //              exitFlag = true;
-  //          }
-  //      }
-
-
-        }
+   }
 
 
 

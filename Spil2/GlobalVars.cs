@@ -40,6 +40,8 @@ namespace Spil2
             }
         }
 
+        public void test() { }
+
         static int _globalValuey;
 
         /// <summary>

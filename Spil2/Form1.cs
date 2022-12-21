@@ -78,6 +78,10 @@ namespace Spil2
 
         List<Monster> monsterlist = new List<Monster>();
 
+        string a = "";
+
+
+
         public void initiate_heroes()
         {
             //string[] lines = System.IO.File.ReadAllLines(@"C:\Users\Martin\Documents\Visual Studio 2013\Projects\Spil2\Xp.txt");

@@ -158,7 +158,7 @@ public class Monster
     {
     }
 
-
+    public class tester { }
 
     public class MonsterPOPGrowth{
 

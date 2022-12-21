@@ -161,6 +161,7 @@ public class Monster
     public class Wolf : Monster
     {
     }
+    public class tester { }
 
     public class Lizardman : Monster
     {

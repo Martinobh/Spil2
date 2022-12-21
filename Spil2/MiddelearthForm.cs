@@ -293,6 +293,36 @@ namespace Spil2
                 n.yCord = GlobalVars.GetRandomNumber(1, 1015);
                 GL.Nestlist.Add(n);
             }
+            else if (rn > 30 && rn < 40)
+            {
+                nest n = new nest();
+                n.race = "Lizardman";
+                n.racenr = 16;
+                n.number = GlobalVars.GetRandomNumber(1, 10);
+                n.xCord = GlobalVars.GetRandomNumber(1, 1272);
+                n.yCord = GlobalVars.GetRandomNumber(1, 1015);
+                GL.Nestlist.Add(n);
+            }
+            else if (rn > 40 && rn < 50)
+            {
+                nest n = new nest();
+                n.race = "Bugbear";
+                n.racenr = 16;
+                n.number = GlobalVars.GetRandomNumber(1, 10);
+                n.xCord = GlobalVars.GetRandomNumber(1, 1272);
+                n.yCord = GlobalVars.GetRandomNumber(1, 1015);
+                GL.Nestlist.Add(n);
+            }
+            else if (rn > 50 && rn < 60)
+            {
+                nest n = new nest();
+                n.race = "Hill Giant";
+                n.racenr = 16;
+                n.number = GlobalVars.GetRandomNumber(1, 10);
+                n.xCord = GlobalVars.GetRandomNumber(1, 1272);
+                n.yCord = GlobalVars.GetRandomNumber(1, 1015);
+                GL.Nestlist.Add(n);
+            }
 
 
 

@@ -1,0 +1,8 @@
+
+*.exe
+
+*.cache
+
+*.pdb
+
+.vs/Spil2/v16/.suo

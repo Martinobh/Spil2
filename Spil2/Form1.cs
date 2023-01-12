@@ -196,7 +196,9 @@ namespace Spil2
             Random rnd = new Random(Seed);
 
             //Orc o = new Orc();
-            
+
+            string testmob = rndmob.testdb();
+
 
             int rr = rnd.Next(1, 81);
         //    MessageBox.Show(rr.ToString());

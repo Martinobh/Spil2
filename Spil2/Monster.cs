@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Timers;
 using System.Windows.Forms;
+using System.Data.SqlClient;
+using System.Configuration;
 
 
 /*
@@ -40,9 +42,7 @@ using System.Windows.Forms;
 namespace Spil2
 {
 
-
-
-public class Monster
+    public class Monster
     {
         public int Id;
         int racenr;
@@ -66,6 +66,71 @@ public class Monster
                 return getrandom.Next(min, max);
             }
         }
+
+      
+        public string testdb()
+        {
+            //  ConnectionStringSettings con = ConfigurationManager.ConnectionStrings["DBConnectionString"];
+
+            //   SqlConnectionStringBuilder destinationConnection = new SqlConnectionStringBuilder(ConfigurationManager.ConnectionStrings["dbConnectionString"].ConnectionString);
+
+            using (SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["dbConnectionString"].ConnectionString))
+            {
+                string sql = "SELECT name, hit_dice FROM Monster WHERE name ='orc' ";
+                conn.Open();
+                using (SqlCommand cmd = new SqlCommand(sql, conn))
+                {
+                    using (SqlDataAdapter ad = new SqlDataAdapter(cmd))
+                    {
+                       // ad.Fill(table);
+                       // HiddenField1.Value = aq.ToString();
+                    }
+                }
+            }
+
+
+            string res ="";
+
+           // SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
+
+            using (SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["dbConnectionString"].ConnectionString))
+            {
+                //Console.WriteLine("\nQuery data example:");
+                //Console.WriteLine("=========================================\n");
+
+                conn.Open();
+
+                string sql1 = "SELECT name, hit_dice FROM Monster WHERE name ='orc' ";
+
+                using (SqlCommand command = new SqlCommand(sql1, conn))
+                {
+                    using (SqlDataReader reader = command.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            string y = 
+                            res = reader.GetString(0) + " , " + reader.GetInt32(1);
+                          //  Console.WriteLine("{0} {1}", reader.GetString(0), reader.GetString(1));
+                        }
+                    }
+                }
+            }
+
+            return res;
+            //using(destinationConnection)
+            //{}
+            // using(SqlConnection con = new SqlConnection()
+
+
+            // using (ConnectionStringSettings settings = ConfigurationManager.ConnectionStrings["partialConnectString"];
+
+            //  using(SqlConnection con = new SqlConnectionStringBuilder(   //new SqlConnection(ConfigurationManager.ConnectionStrings["DBConnectionString"].ConnectionString))
+        }
+
+
+
+
+
 
         Random rnd = new Random();
 
